@@ -22,7 +22,7 @@
      * Socks- $2
      * If the variable input is not an item in the store, then print 'Invalid Item' to the console.
 
-3. Print a random integer (whole number) between 50 and 100  to the console
+3. Print a random integer (whole number) between 50 (inclusive) and 100 (exclusive)  to the console
     * Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 
 ## Part 1 - Fork and Clone the project
