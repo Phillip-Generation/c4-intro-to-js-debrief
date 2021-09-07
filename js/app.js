@@ -11,9 +11,21 @@
 //Write your code for GenBuzz below this line:
 
 
+const myNumber = () => {
+    for (var i=1; i <= 20; i++)
+    {
+        if (i % 15 == 0)
+            console.log("GenBuzz");
+        else if (i % 3 == 0)
+            console.log("Gen");
+        else if (i % 5 == 0)
+            console.log("Buzz");
+        else
+            console.log(i);
+    }
+}
 
-
-
+myNumber(10);
 
 //2. E-COMMERCE ITEM LIST
 
@@ -37,5 +49,8 @@
 
 //Write your code below this line:
 
+const randomNumber = (number) => {
+    return Math.floor(Math.random() * number);
+}
 
-
+console.log(randomNumber(50))
