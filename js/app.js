@@ -70,8 +70,10 @@ switch(items) {
 
 //Write your code below this line:
 
-const randomNumber = (number) => {
-    return Math.floor(Math.random() * number);
+const randomNumber = (min, max) => {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
 }
 
-console.log(randomNumber(50))
+console.log(randomNumber(50, 100))
