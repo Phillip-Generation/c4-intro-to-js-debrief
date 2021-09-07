@@ -6,15 +6,15 @@ if (typeof myNumber !== 'number')
 // If myNumber is not a number, print 'This is not a number' to the console.
 {console.log('This is not a number')}
 
-else if (myNumber % 3 == 0 && myNumber % 5 == 0) {
+else if (myNumber % 3 === 0 && myNumber % 5 === 0) {
     console.log('GenBuzz');
 }
 // If value of myNumber is a multiple of 3 print 'Gen' to the console
-else if (myNumber % 3 == 0) {
+else if (myNumber % 3 === 0) {
     console.log('Gen');
 }
 // If value of myNumber is a multiple of 5 print 'Buzz' to the console
-else if (myNumber % 5 == 0) {
+else if (myNumber % 5 === 0) {
     console.log('Buzz');
 }
 // If the value of myNumber is a multiple of both 3 and 5 (ex. 15) print GenBuzz to the console
