@@ -13,11 +13,11 @@ let myNumber = 1;
 
 if (typeof myNumber !== 'number') {
     console.log('This is not a number');
-} else if (myNumber % 3 == 0) {
+} else if (myNumber % 3 === 0) {
     console.log('Gen');
-} else if (myNumber % 5 == 0) {
+} else if (myNumber % 5 === 0) {
     console.log('Buzz');
-} else if (myNumber % 3 == 0 && myNumber % 5 == 0) {
+} else if (myNumber % 3 === 0 && myNumber % 5 === 0) {
     console.log('GenBuzz');
 } else {
     console.log(myNumber);
@@ -64,6 +64,12 @@ switch (items) {
 // Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 
 //Write your code below this line:
-Math.floor((Math.random() * 100) + 50);
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
+console.log(getRandomInt(50, 100));
 
 
