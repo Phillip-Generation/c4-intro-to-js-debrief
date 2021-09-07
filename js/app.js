@@ -1,11 +1,26 @@
 //1. GenBuzz
 // Create variable myNumber
+let myNumber = 33;
 // Check that the value of the myNumber is of type number
+if (typeof myNumber !== 'number')
 // If myNumber is not a number, print 'This is not a number' to the console.
+{console.log('This is not a number')}
 // If value of myNumber is a multiple of 3 print 'Gen' to the console
+else if (myNumber % 3 == 0) {
+    console.log('Gen');
+}
 // If value of myNumber is a multiple of 5 print 'Buzz' to the console
+else if (myNumber % 5 == 0) {
+    console.log('Buzz');
+}
 // If the value of myNumber is a multiple of both 3 and 5 (ex. 15) print GenBuzz to the console
+else if (myNumber % 3 == 0 && myNumber % 5 == 0) {
+    console.log('GenBuzz');
+}
 // If the value of myNumber is any other number print the value of myNumber to the console.
+else {
+    console.log(myNumber)
+}
 // Reference Codecademy lessons: Introduction- Arithmetic Opertaors, Conditional Statements lessons 3, 4, 5,and 9
 
 //Write your code for GenBuzz below this line:
