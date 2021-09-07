@@ -20,8 +20,6 @@ const myNumber = () => {
             console.log("Gen");
         else if (i % 5 == 0)
             console.log("Buzz");
-        else if (i === "") 
-        console.log("This is not a number");
         else 
             console.log(i);
     }
