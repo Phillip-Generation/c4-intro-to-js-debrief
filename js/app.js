@@ -31,7 +31,6 @@ else {
 
 
 //2. E-COMMERCE ITEM LIST
-
 // Use a swtich statement to print the price of the each item in the store to the console.
 // Ex. If the value of the variable is 'shoes' then, the statement "Shoes are $50" should be printed to the console.
 // Reference: Codecademy lesson 10
@@ -43,7 +42,19 @@ else {
 // If the variable input is not an item in the store, then print 'Invalid Item' to the console.
 
 //Write your code for the E-Commerce item list below this line:
-
+let eItem = '';
+switch (eItem) {
+    case 'Shoes': console.log('Shoes are $50');
+    break;
+    case 'Jeans': console.log('Jeans are $25');
+    break;
+    case 'Hat': console.log('Hats are $12');
+    break;
+    case 'Socks': console.log('Socks are $2');
+    break;
+    default: console.log('Invalid Item');
+    break;
+}
 
 
 
@@ -52,5 +63,10 @@ else {
 
 //Write your code below this line:
 
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+  }
 
-
+console.log(getRandomInt(50,100));
