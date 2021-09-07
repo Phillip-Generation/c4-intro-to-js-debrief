@@ -20,10 +20,14 @@ const myNumber = () => {
             console.log("Gen");
         else if (i % 5 == 0)
             console.log("Buzz");
-        else
-            console.log("This is not a number");
+        else if (i === "") 
+        console.log("This is not a number");
+        else 
+            console.log(i);
     }
 }
+
+myNumber()
 
 myNumber(10);
 
@@ -41,7 +45,7 @@ myNumber(10);
 
 //Write your code for the E-Commerce item list below this line:
 
-const items = "Hat";
+const items = "Jeans";
 
 switch(items) {
     case 'Shoes':
