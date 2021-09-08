@@ -9,16 +9,16 @@
 // Reference Codecademy lessons: Introduction- Arithmetic Opertaors, Conditional Statements lessons 3, 4, 5,and 9
 
 //Write your code for GenBuzz below this line:
-let myNumber = 1;
+let myNumber = 5;
 
 if (typeof myNumber !== 'number') {
     console.log('This is not a number');
+} else if (myNumber % 3 === 0 && myNumber % 5 === 0) {
+    console.log('GenBuzz');
 } else if (myNumber % 3 === 0) {
     console.log('Gen');
 } else if (myNumber % 5 === 0) {
     console.log('Buzz');
-} else if (myNumber % 3 === 0 && myNumber % 5 === 0) {
-    console.log('GenBuzz');
 } else {
     console.log(myNumber);
 }
@@ -38,24 +38,24 @@ if (typeof myNumber !== 'number') {
 // If the variable input is not an item in the store, then print 'Invalid Item' to the console.
 
 //Write your code for the E-Commerce item list below this line:
-let items = 'shoes';
+const items = 'shoes';
 
 switch (items) {
     case 'shoes':
-        console.log('Shoes are $50.');
-        break;
+    console.log('Shoes are $50.');
+    break;
     case 'jeans':
-        console.log('Jeans are $25.');
-        break;
+    console.log('Jeans are $25.');
+    break;
     case 'hat':
-        console.log('Hat is $12.');
-        break;
+    console.log('Hat is $12.');
+    break;
     case 'socks':
-        console.log('Socks are $2.');
-        break;
+    console.log('Socks are $2.');
+    break;
     default:
-        console.log('Invalid item.');
-        break;
+    console.log('Invalid item.');
+    break;
 }
 
 
